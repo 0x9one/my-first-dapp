@@ -1,6 +1,6 @@
 # Create my first Ethereum Dapp with Ethers.js
 
-This is a step by step tutorial to clear how to create my first Dapp, We will use [Metamask](https://metamask.io/ "Official website"), [RemixIDE](https://remix.ethereum.org/ "Official website"), and [Ethers.js](https://github.com/ethers-io/ethers.js/ "Official repo").
+This is a step by step tutorial to clear how to create my first Dapp that can read and write a value to the blockchain, We will use [Metamask](https://metamask.io/ "Official website"), [RemixIDE](https://remix.ethereum.org/ "Official website"), and [Ethers.js](https://github.com/ethers-io/ethers.js/ "Official repo").
 
 ## The steps
 
