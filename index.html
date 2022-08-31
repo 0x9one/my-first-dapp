@@ -31,5 +31,40 @@
             <button onclick="getMood()">Get Mood</button>
             <button onclick="setMood()">Set Mood</button>
         </div>
+
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+        <script>
+            const MoodContractAddress = "0x7CF94039a13D4E2Cbb399ab93CA5cC12bEB724f9";
+            const MoodContractABI = [
+                                        {
+                                            "inputs": [
+                                                {
+                                                    "internalType": "string",
+                                                    "name": "_mood",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "name": "setMood",
+                                            "outputs": [],
+                                            "stateMutability": "nonpayable",
+                                            "type": "function"
+                                        },
+                                        {
+                                            "inputs": [],
+                                            "name": "getMood",
+                                            "outputs": [
+                                                {
+                                                    "internalType": "string",
+                                                    "name": "",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "stateMutability": "view",
+                                            "type": "function"
+                                        }
+                                    ]
+            let MoodContract;
+            let signer;
+        </script>
     </body>
 </html>
