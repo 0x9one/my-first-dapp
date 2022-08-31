@@ -76,6 +76,17 @@
                     );
                 });
             });
+            async function getMood() {
+                const getMoodPromise = MoodContract.getMood();
+                const Mood = await getMoodPromise;
+                console.log(Mood);
+            }
+
+            async function setMood() {
+                const mood = document.getElementById("mood").value;
+                const setMoodPromise = MoodContract.setMood(mood);
+                await setMoodPromise;
+            }
         </script>
     </body>
 </html>
